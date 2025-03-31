@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video class="background-video" muted loop>
+        <source src="bg-vid.mp4" type="video/mp4">
+    </video>
+    <div id="header">
+        <div class="container">
+            <nav><a href="https://www.linkedin.com/in/harsh-tripathi-63ab79176/" target="_blank">
+                <img src="social1.png" alt="logo"  class="logo" ></a>
+                <ul>
+                    <li><a href="#profile">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="resume.pdf" target="blank" >Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+ <!-- -------------profile----------- --> 
+ <div id="profile">
+            <div class="container">
+                <div class="row">
+                    <div class="img">
+                        <img src="bg.jpg" alt="profile">
+                    </div>
+                    <div class="intro">
+                        <h1 class="Text">
+                            <span class="text">Hello!!</span>
+                        </h1>
+                        <h2 class="Text-2"> <span class="text-2">
+                            <b>I'm Harsh Tripathi </b>
+                        </h2>
+                        <h3 class="Text-3">
+                            <span class="text-3">Web Developer | Cyber Analyst</span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- ----------------about---------------- -->
+        <div id="about">
+            <div class="container">
+                        <h2 class="text-11"> <span> <b>A bit about me -</span> </b></h2>
+                        <div class="row2">
+                           <div class="bout">
+                            <p class="info">"My name is<u> Harsh Tripathi</u> ,and I'm thrilled to meet you!<br>
+
+                                I'm based in Allahabad, Uttar Pradesh, India. <br> I have a deep passion for <u>Web Development</u> and 
+                                <u > CyberSecurity</u>,<br> which fuels my enthusiasm for<u> Web Developer</u> and<u> Cyber security expert </u>
+                                .<br> Currently, I am Student prusing  <u>BCA </u>(Bachelor o f computer application), 
+                                <br>where I learn the concept of computer application"</p>
+                            
+                           </div>
+                        <div class="skills">
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skill')"> Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experiance</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skill">
+                        <ul>
+                            <li><span> Programming </span><br> Python, Java</li>
+                            <li><span> Programming </span><br> MySql, MongoDB</li>
+                            <li><span> Cyber security </span> <br>Network security</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Codewithrandom.dev</span><br>Web Development Intern.</li>
+                            <li><span> Techgyan Technologies </span><br>Python Programming Intern.</li>
+                            <li><span> Microsoft </span> <br>Cyber Security Intern</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span> 2019-2021 </span><br>High School</li>
+                            <li><span> 2021-2023</span><br> Intermediated</li>
+                            <li><span> 2023-2026 </span> <br>BCA(Bachelor of Computer Application)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!--    ----------------project---------------- -->
+
+<div id="bout">
+    <div class="container"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+    <!-- <script src="main.js">
+<!-- 
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        } -->
+
+    
+    <script src="main.js"></script>
+<!-- Contact -->
+ <div id="contact">
+    <div class="container">
+
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <div class="contact">
+                   <img src="gmail1.png" alt="logo" class="logo">
+                    <a href="mailto:your-tripathiharsh320@gmail.com" class="gmail"> Tripathiharsh320@gmail.com</a>
+                </div>
+                <div class="phone">
+                    <img src="phone.png" alt="phone" class="logo">
+                    <a href="tel:+919140458794" class="call">+919140458794</a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/harsh-tripathi-63ab79176/" target="_blank"><img src="link11.png" alt="Linkedin"></a>
+                    <a href="http://instagram.com/harsh_tripathi26/" target="_blank"><img src="ig.png" alt="instagram"></a>
+                    <a href="https://github.com/harshtripathi26" target="_blank"><img src="git2.png" alt="Git hub"></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet"> 
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+        <div class="copywrite">© 2025 Harsh Tripathi. All rights reserved.
+            
+        </div>
+    
+    </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby_qTcmGj9X52sRcy3yqqBXKbmdcZJwsvz1NuWAdsX2cG61pPkidX3cLT3P_TI92_6d/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+              msg.innerHTML = "Thanks for Contacting us. We will get back to you soon."
+              form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html

@@ -1,0 +1,364 @@
+/* body{
+    /* background-color: #1A2830; */
+    /* background-image: url('bg-img.jpg');
+    background-position: center ;
+    background-size: cover; */
+    /* animation: cursorMove 1s infinite;
+    transition: background-color 0.5s ease-in-out; */
+    
+ */
+
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrollbars */
+}
+.background-video {
+    position: fixed; /* Fixes the video in the background */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the screen */
+    z-index: -1; /* Moves the video behind other elements */
+
+}
+.content {
+    position: relative;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}   
+#header{
+    width: auto;
+    height: auto;
+}
+.Header{
+    line-height: 15;
+    padding : 15px;
+}
+
+.container{
+    padding: 25px ;
+    border: 20px blue;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.logo{
+    width: 25%;
+    border-radius: 100%;
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: white ;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background:  violet;
+    position: absolute;
+    left: 0%;
+    bottom: -6px;
+    transition: 0.3s;
+}
+nav ul li a:hover::after{
+
+    width: 100%;
+
+}
+/* -----------profile--------------------- */
+#profile{
+    padding: 20px 0px;
+    border: 5px solid violet;
+    margin: 10% 10%;
+
+    /* color: rgb(241, 16, 39); */
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.img{
+   flex-basis: 40%;}
+.img img{
+    width: 65%;
+    padding: 15%;
+    /* justify-content: center; */
+    border-radius: 50%;
+}
+
+.intro{
+    flex-basis:50%;
+}
+.text{
+    font-size: 70px;
+    font-weight: 600;
+    font-style: georgia;
+    color: white;
+}
+
+.Text-2{
+    color: violet;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.text-3{
+    color: violet;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+
+/* ---------------------------about-------------------- */
+#about{
+    padding:  0px;
+    color: white;
+    margin-top: 5%;
+}
+.row2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.bout{
+    border: 5px solid #606162; /* Blue border color */
+    border-radius: 40px; /* Rounded corners */
+    padding: 10px;
+    max-width: 1100px;
+    box-shadow:  4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px;
+    background-color: black;
+    /* background-image: url('logo1.jpg');
+    background-size: cover;
+    background-position: center; */
+}
+.info{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.info u {
+    color: violet;
+}
+.skills
+
+
+.text-11{
+    color: violet;
+    font-size: 50px;
+    font-weight: 600;
+    font-style: arial;
+}
+.text-22{
+    color: white;
+    font-size: large;
+    font-weight: blod;
+    text-align: center;
+    text-indent: 50px;
+}
+.about h2{
+    color: violet;
+    font-size: 50px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.about p{
+    color:violet;
+    font-size: x-large;
+    font-style: italic;
+
+}
+/* 
+.Text-2{
+    color: violet;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.text-3{
+    color: violet;
+    font-size: x-large;
+    font-weight: bold;
+} */
+
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+    
+}
+.tab-titles p{
+    font-size: x-large;
+}
+.tab-links{
+
+    margin-right: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: blueviolet;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+    
+
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents{
+    font-style: oblique;
+    color: white;
+} 
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0px;
+    
+}
+
+.tab-contents ul li span{
+    color: violet;
+    font-size: 20px;
+    font-style: normal;
+    
+
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+.skills ul{
+    font-size: large;
+    font-style: oblique;
+    padding: 2px;
+}
+/* ----------Contact------- */
+.sub-title{
+    color: whitesmoke;
+    font-size: 50px;
+    font-weight: 600;
+    
+
+}
+,.contact-left{
+    flex-basis: 35%;
+}
+.contact-left p{
+    margin-inline: 20px;
+    margin-top: 30px;    
+    color:whitesmoke;
+}
+
+.contact-right{
+    flex-basis: 60%;
+    color:white;
+}
+.contact {
+    display: flex;
+    align-items: center; /* Vertically aligns items */
+    gap: 10px; /* Adds space between the logo and email */
+    font-family: Arial, sans-serif;
+  }
+  .logo {
+    width: 30px; /* Adjust size to fit */
+    height: auto;
+  }
+.gmail{
+    color: white;
+}
+.phone{
+    display: flex;
+    align-items: center; /* Vertically aligns items */
+    gap: 10px; /* Adds space between the logo and email */
+    font-family: Arial, sans-serif;
+}
+.call{
+    color: white;
+}
+
+.social-icons{
+    width: 300px;
+    height: auto;
+    /* border: 2px solid #ddd; */
+    transition: transform 0.3s, filter 0.3s;
+}
+.social-icons a:hover {
+    transform: scale(2.1); /* Zooms in */
+    filter: opacity(0.5);
+    /* filter: brightness(200%); Brightens the image */
+    
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease-in-out;
+    background-color: black;
+    color: antiquewhite;
+    font-weight: bolder;
+    
+}
+.btn:hover{
+    background-color: #ff004f;
+}   
+
+.contact-right{
+    width: 100%;
+}
+form input, form textarea{
+    width: 75%;
+    padding: 15px;
+    outline: none;
+    background:#262626;
+    margin: 15px 0;
+    color: #fff;
+    border: 0px ;
+    border-radius: 6px;
+    font-size: 18px;
+}
+.copywrite{
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    background: lightgray;
+    opacity: 75%;
+    font-weight: 300;
+    margin-top: 20px;
+}
+#msg{
+    color: blueviolet;
+    margin-top: -10px;
+    display: block;
+}
